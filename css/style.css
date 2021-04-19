@@ -3,3 +3,62 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* comon */
+div,
+li {
+    min-height: 50px;
+    border: 1px solid black;
+}
+
+
+
+/* header */
+header{
+    height: 90vh;
+    position: fixed;
+    float: left;
+}
+header nav {
+    width: 200px;
+    height: 90vh;
+    position: relative;
+    background-color: red;
+}
+
+nav .logo,
+nav .home,
+nav .serch,
+nav .title_playlist,
+nav .craft_playlist,
+nav .playlist,
+.nav_bottom .app,
+.nav_bottom .utente{
+    width: 100%;
+    background-color: yellow;
+}
+
+.nav_bottom {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* main */
+main {
+    width: calc(100% - 200px);
+    height: 90vh;
+    float: right;
+    background-color: orange;
+}
+
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 90vh);
+    background-color: green;
+}
