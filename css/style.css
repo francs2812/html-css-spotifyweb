@@ -102,3 +102,13 @@ footer {
     height: calc(100vh - 90vh);
     background-color: green;
 }
+footer .conteiner-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer li {
+    width: 300px;
+    list-style: none;
+}
