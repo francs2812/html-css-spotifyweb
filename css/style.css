@@ -11,6 +11,9 @@ li {
     border: 1px solid black;
 }
 
+.conteiner-flex {
+
+}
 
 
 /* header */
@@ -52,6 +55,43 @@ main {
     float: right;
     background-color: orange;
 }
+main nav .conteiner-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main nav li {
+    padding: 0 20px;
+    list-style: none;
+}
+
+main .album .conteiner-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main .album li {
+    width: calc(75% / 6);
+    margin:0 2% ;
+    list-style: none;
+}
+
+main .artist .conteiner-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main .artist li {
+    width: calc(75% / 6);
+    margin:0 2% ;
+    list-style: none;
+}
+
 
 /* footer */
 footer {
