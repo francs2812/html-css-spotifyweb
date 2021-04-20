@@ -6,12 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
 
         <link rel="stylesheet" href="css/style.css">
         <title>Spotify</title>
     </head>
     <body>
+        <!-- header -->
         <header>
             <nav>
                 <div id="logo_spotify">
@@ -40,7 +42,7 @@
                     <li class="divider">
                         <h1>playlist</h1>
                     </li>
-                    <li class="craft_playlist">
+                    <li class="craft_playlist not_visible_only_xs ">
                           <div class="logo">
                               <h1>+</h1>
                           </div>
@@ -69,15 +71,28 @@
                     </li>
                 </ul>
                 <div class="nav_bottom">
-                    <div class="app"></div>
-                    <div class="utente"></div>
+                    <div class="app">
+                        <img src="img/download.svg" alt="">
+                        <p>install app</p>
+                    </div>
+                    <hr>
+                    <div class="utente">
+                        <img src="img/profile.svg" alt="">
+                        John Doe</div>
                 </div>
             </nav>
         </header>
+        <!-- /header -->
+
+        <!-- main -->
         <main>
+            <!-- pulsante per upgrade account -->
             <div class="upgrade conteiner-flex">
                 <a class="items" href="#">effettua l'upgrade</a>
             </div>
+            <!-- /pulsante per upgrade account -->
+
+            <!-- barra menu centrale -->
             <nav>
                 <ul class="conteiner-flex"> 
                     <li class="items">in evidenza</li>
@@ -88,6 +103,9 @@
                     <li class="items">scopri</li>
                 </ul>
             </nav>
+            <!-- /barra menu centrale -->
+
+            <!-- brani ascoltati di recente -->
             <div class="title">
                 <h1>Recently played</h1>
             </div>
@@ -125,6 +143,9 @@
                     </li>
                 </ul>
             </div>
+            <!-- /brani ascoltati di recente -->
+
+            <!-- playlist suggerite -->
             <div class="title">
                 <h1>Creato per John Doe</h1>
                 <p>Più ascolti, più accurati saranno i suggerimenti.</p>
@@ -141,6 +162,9 @@
                     </li>
                 </ul>
             </div>
+            <!-- /playlist suggerite -->
+
+            <!-- artisti più popolari -->
             <div class="artists">
                 <div class="title">
                     <h1>Artisti più popolari</h1>
@@ -159,13 +183,53 @@
                     </ul>
                 </div>
             </div>
+            <!-- /artisti più popolari -->
         </main>
+        <!-- /main -->
+
+        <!-- footer -->
         <footer>
-            <ul class="conteiner-flex">
-                <li class="player_left item"></li>
-                <li class="player_center item"></li>
-                <li class="player_right item"></li>
+            <ul class="player conteiner-flex">
+                <li class="player_left item conteiner-flex">
+                    <img class="item" src="img/player_left.jpg" alt="">
+                    <div class="id_play item">
+                        <h1>Sinister</h1>
+                        <p>Brano nome</p>
+                    </div>
+                    <div class="like_playlist">
+                        <i class="far fa-heart"></i>
+                        <br>
+                        <i class="far fa-folder"></i>
+                    </div>
+                </li>
+                <li class="player_center item">
+                    <div class="top">
+                        <div class="console">
+                            <i class="fas fa-random"></i>
+                            <i class="fas fa-caret-left"></i>
+                            <i class="far fa-play-circle"></i>
+                            <i class="fas fa-caret-right"></i>
+                            <i class="fas fa-redo"></i>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <span>0:25</span>
+                        <div class="timer">
+                            <span></span>
+                        </div>
+                        <span>4:35</span>
+                    </div>
+                </li>
+                <li class="player_right item">
+                    <i class="fas fa-list"></i>
+                    <i class="fas fa-tv"></i>
+                    <i class="fas fa-volume-up"></i>
+                    <div class="volume">
+                        <span></span>
+                    </div>
+                </li>
             </ul>
         </footer>
+        <!-- /footer -->
     </body>
 </html>
