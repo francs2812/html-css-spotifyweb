@@ -177,6 +177,7 @@ main .conteiner-flex {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    z-index: 3;
 }
 
 main .upgrade a {
@@ -184,6 +185,7 @@ main .upgrade a {
     font-weight: 700;
     height: 39px;
     padding: 12px 21px;
+    margin-right: 20px;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 30px;
@@ -258,6 +260,21 @@ main .album li {
     margin-bottom: 20px;
     color: #7D7F84;
 }
+
+.songs {
+    position: relative;
+}
+
+.songs i {
+    z-index: 2;
+    font-size: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 37%;
+    opacity: 0;
+}
+
 .title>p {
     font-size: 10px;
     margin-left: 10px;
@@ -368,6 +385,7 @@ footer .player .conteiner-flex {
     width: 30%;
     height: 100%;
     display: block;
+    float: left;
     background-color: white;
 }
 .bottom  {
@@ -401,15 +419,98 @@ footer .player .conteiner-flex {
     width: 30%;
     height: 100%;
     display: block;
+    float: left;
     background-color: white;
 }
 
+/* hover */
+.songs img {
+    z-index: 1;
+}
+
+.songs img:hover {
+    filter: opacity(0.5);
+    cursor: pointer;
+}
+
+main .upgrade a:hover {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+}
+main nav li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+header li:hover,
+.nav_bottom .app:hover{
+    filter: opacity(1);
+    cursor: pointer;
+ }
+
+ .player_left p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+ }
+ .like_playlist i:hover {
+    cursor: pointer;
+    color: white;
+ }
+ .bottom .timer span:hover,
+ .volume span:hover {
+    cursor: pointer;
+    background-color:#ADFF2F;
+ }
+
+ .bottom .timer .circle,
+ .player_right .volume .circle  {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    opacity: 0;
+ }
+
+ .player_center .console i:hover {
+    cursor: pointer;
+ }
+ .timer:hover .circle,
+ .volume:hover .circle,
+ .songs:hover i  {
+    opacity: 1;
+ }
+
+ .player_right i:hover {
+    cursor: pointer;
+ }
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
 
 @media all and (min-width: 1140px) {
     .visible_only_xs{
