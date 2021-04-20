@@ -106,11 +106,12 @@ header nav .craft_playlist .logo h1 {
 }
 
 .nav_bottom {
-    width: 100%;
+    width: 90%;
     position: absolute;
     left: 10px;
     bottom: 0;
     color: white;
+    background-color: black;
 }
 .nav_bottom .app {
     height: 18px;
@@ -146,6 +147,12 @@ header nav .craft_playlist .logo h1 {
     border-radius: 50%;
     background-color: #A3A3A3;
 }
+
+.nav_bottom .utente p {
+    vertical-align: middle;
+    display: inline-block;
+}
+
 
 .playlist {
     margin: 10px 0;
@@ -204,6 +211,15 @@ main nav li {
     text-transform: uppercase;
     color: #7C7E83;
 }
+
+main nav .items hr {
+    background-color: #ADFF2F;
+    border-color: #ADFF2F;
+    width: 45px;
+    height: 2px;
+    margin-left: 25px;
+}
+
 main .title>h1 {
     font-size: 20px;
     font-weight: 700;
@@ -475,5 +491,21 @@ footer .player .conteiner-flex {
         white-space: nowrap;
         width: calc(100% / 4);
     }
-
+    .nav_bottom hr{
+        display: none;
+    }
+    .player_left .id_play {
+        margin-left: 5px;
+        margin-right: 0;
+    }
+    .like_playlist {
+        padding: 0px;
+    }
+    .nav_bottom .app p,
+    .nav_bottom .utente p  {
+        display: none;
+    }
+    .nav_bottom {
+        bottom: 10px;
+    }
 }
