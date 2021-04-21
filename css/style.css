@@ -105,6 +105,11 @@ header nav .craft_playlist .logo h1 {
     color: black;
 }
 
+.playlists {
+    height: 20vh;
+    overflow-y: auto;
+}
+
 .nav_bottom {
     width: 90%;
     position: absolute;
