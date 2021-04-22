@@ -174,9 +174,10 @@ main {
 
 main .upgrade {
     width: calc(100% - 200px);
-    height: 50px;
+    height: 90px;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
 }
 main .conteiner-flex {
     display: flex;
@@ -189,7 +190,7 @@ main .upgrade a {
     font-size: 10px;
     font-weight: 700;
     height: 39px;
-    padding: 12px 21px;
+    padding: 12px 45px;
     margin-right: 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -311,6 +312,7 @@ footer {
     left: 0;
     width: 100%;
     height: calc(100vh - 90vh);
+    z-index: 3;
     background-color: #282828;
 }
 footer .conteiner-flex {
@@ -613,5 +615,81 @@ header li:hover,
     }
     .nav_bottom {
         bottom: 10px;
+    }
+}
+
+@media all and (max-height:600px) {
+    footer {
+        height:80px;
+    }
+    main, main .upgrade {
+        padding: 0;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .player_left img {
+        height: 35px;
+        margin-left: 3px;
+    }
+
+    .player_left .id_play {
+        margin-left: 3px;
+        margin-right: 0;
+        width: 40px;
+    }
+    
+    .player_left i {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .player_left p {
+        font-size: 8px;
+    }
+
+    .player_left h1 {
+        font-size: 10px;
+    }
+
+    .player_center .top {
+        padding: 1px;
+    }
+
+    .player_center {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .player_center i {
+        font-size: 13px;
+        margin-left: 5%;
+    }
+
+    .player_right i {
+        font-size: 10px;
+    }
+
+    .player_center .console {
+        width: 100%;
+    }
+
+    .nav_bottom {
+        bottom: 35px;
+    }
+
+    main nav li {
+        padding: 5px;
+        display: flex;
+        white-space: nowrap;
+        width: calc(100% / 2);
+        flex-wrap: wrap;
+    }
+
+    main nav {
+        margin-top: 90px;
     }
 }
